@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f5f6fa;
+    }
+    .navbar {
+      background: white;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .menu span {
+      margin: 0 15px;
+      cursor: pointer;
+    }
+    .container {
+      padding: 30px;
+    }
+    table {
+      width: 100%;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 15px;
+      text-align: center;
+    }
+    th {
+      background: #eee;
+    }
+    .green { color: green; }
+    .orange { color: orange; }
+    .red { color: red; }
+    .blue { color: blue; }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <div><b>ChatAgent</b></div>
+  <div class="menu">
+    <span>Dashboard</span>
+    <span>Campaigns</span>
+    <span>Settings</span>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Dashboard</h2>
+
+  <table border="1">
+    <tr>
+      <th>Category</th>
+      <th>Today</th>
+      <th>Last 7 Days</th>
+      <th>This Month</th>
+    </tr>
+    <tr>
+      <td class="green">Sent</td>
+      <td>0</td><td>0</td><td>0</td>
+    </tr>
+    <tr>
+      <td class="orange">Pending</td>
+      <td>0</td><td>0</td><td>0</td>
+    </tr>
+    <tr>
+      <td class="red">Failed</td>
+      <td>0</td><td>0</td><td>0</td>
+    </tr>
+    <tr>
+      <td class="blue">Scheduled</td>
+      <td>0</td><td>0</td><td>0</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
